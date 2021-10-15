@@ -1,8 +1,6 @@
 
-
-import './App.css';
 import { useEffect, useState } from "react";
-import {useTimerEffect} from "./customHook"
+import {useTimerEffect} from "../customHook"
 
 function useTimer(sec) {
   const [time, setTime] = useState();
@@ -17,7 +15,7 @@ function useTimer(sec) {
 function Timer() {
 
   const [hide, setHide] = useState(false);
-  const timer = useTimerEffect(3);
+  const timer = useTimerEffect(5);
   
   return (
     <div className="App">
