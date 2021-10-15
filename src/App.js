@@ -2,7 +2,8 @@ import './App.css';
 import { useEffect, useReducer, useState } from "react";
 import Timer from './Timer';
 import { Github } from './Components/Github';
-import {Todo} from "./Components/Todo"
+import { Todo } from "./Components/Todo";
+import MergeState from './Components/mergeState';
 
 function App() {
   const [age, setAge] = useState(0);
@@ -39,7 +40,8 @@ function App() {
         dispatch({type:"ADD_COUNT", payload: 1})
       }}>Add 1</button> */}
 
-      <Todo></Todo>
+      <MergeState></MergeState>
+      {/* <Todo></Todo> */}
       {/* <Timer></Timer> */}
       {/* <Github></Github> */}
     </div>
