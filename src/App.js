@@ -40,10 +40,10 @@ function App() {
         dispatch({type:"ADD_COUNT", payload: 1})
       }}>Add 1</button> */}
 
-      <MergeState></MergeState>
+      {/* <MergeState></MergeState> */}
       {/* <Todo></Todo> */}
       {/* <Timer></Timer> */}
-      {/* <Github></Github> */}
+      <Github></Github>
     </div>
   );
 }
