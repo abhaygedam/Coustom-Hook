@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useReducer, useState } from "react";
 import Timer from './Components/Timer';
+import Throttlefun from './Components/Throttle';
 import { Github } from './Components/Github';
 import { Todo } from "./Components/Todo";
 import MergeState from './Components/mergeState';
@@ -42,7 +43,8 @@ function App() {
 
       {/* <MergeState></MergeState> */}
       {/* <Todo></Todo> */}
-      <Timer></Timer>
+      <Throttlefun></Throttlefun>
+      {/* <Timer></Timer> */}
       {/* <Github></Github> */}
     </div>
   );
